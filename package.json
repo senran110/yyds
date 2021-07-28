@@ -1,0 +1,24 @@
+{
+  "name": "xiao",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "1.8.2",
+    "vuepress-plugin-go-top": "^1.0.4",
+    "vuepress-plugin-meting": "^0.2.3",
+    "vuepress-theme-reco": "1.6.6"
+  },
+  "description": "xiao",
+  "dependencies": {
+    "@vssue/api-github-v4": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "leancloud-storage": "^3.15.0",
+    "valine": "^1.4.14",
+    "vuepress-plugin-comment": "^0.7.3"
+  }
+}
